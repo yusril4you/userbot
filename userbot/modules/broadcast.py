@@ -9,10 +9,10 @@ from userbot import BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, LOGS
 from userbot.modules.sql_helper import broadcast_sql as sql
-from userbot.utils import ram_cmd, as @cuy parse_pre
+from userbot.utils import ram_cmd, parse_pre
 
 
-@cuy(pattern="sendto ?(.*)")
+@ram_cmd(pattern="sendto ?(.*)")
 async def catbroadcast_send(event):
     if event.fwd_from:
         return
@@ -58,7 +58,7 @@ async def catbroadcast_send(event):
         )
 
 
-@cuy(pattern="fwdto ?(.*)")
+@ram_cmd(pattern="fwdto ?(.*)")
 async def catbroadcast_send(event):
     if event.fwd_from:
         return
@@ -104,7 +104,7 @@ async def catbroadcast_send(event):
         )
 
 
-@cuy(pattern="addto ?(.*)")
+@ram_cmd(pattern="addto ?(.*)")
 async def catbroadcast_add(event):
     if event.fwd_from:
         return
@@ -140,7 +140,7 @@ async def catbroadcast_add(event):
             )
 
 
-@cuy(pattern="rmfrom ?(.*)")
+@ram_cmd(pattern="rmfrom ?(.*)")
 async def catbroadcast_remove(event):
     if event.fwd_from:
         return
@@ -176,7 +176,7 @@ async def catbroadcast_remove(event):
             )
 
 
-@cuy(pattern="bclist ?(.*)")
+@ram_cmd(pattern="bclist ?(.*)")
 async def catbroadcast_list(event):
     if event.fwd_from:
         return
@@ -232,7 +232,7 @@ async def catbroadcast_list(event):
     await event.efit(resultext)
 
 
-@cuy(pattern="frmfrom ?(.*)")
+@ram_cmd(pattern="frmfrom ?(.*)")
 async def catbroadcast_remove(event):
     if event.fwd_from:
         return
@@ -289,7 +289,7 @@ async def catbroadcast_remove(event):
             )
 
 
-@poci_cmd(pattern="delc ?(.*)")
+@ram_cmd(pattern="delc ?(.*)")
 async def catbroadcast_delete(event):
     if event.fwd_from:
         return
