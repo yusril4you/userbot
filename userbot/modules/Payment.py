@@ -23,8 +23,8 @@ async def _(typew):
 
     await typew.client.send_message(
 
-        typew.chat_id, "**  **", reply_to=typew.reply_to_msg_id)
-
+        typew.chat_id, "** VIA DANA = 0895611203477 VIA GOPAY = 081270603368 PAYMENT ACENG • STOREE **", reply_to=typew.reply_to_msg_id)
+ 
     await typew.delete()
 
 CMD_HELP.update({
