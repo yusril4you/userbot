@@ -1,9 +1,14 @@
 
-FROM ramadhani892/ramubot:master
-# ======================
-#    U-BOT DOCKER
-#   FROM DOCKERHUB.COM
-# ======================
-RUN git clone -b master https://github.com/YusrilRNLD/U-Bot home/yusgans/
-WORKDIR home/yusgans/
-CMD ["python3", "-m", "userbot"]
+YusrilRNLD/U-Bot:master
+
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs && \
+    npm i -g npm
+
+RUN git clone -b main https://github.com/YusrilRNLD/U-Bot /home/U-Bot/ \
+    && chmod 777 /home/U-Bot \
+    && mkdir /home/U-Bot/bin/
+
+WORKDIR /home/U-Bot/
+
+CMD [ "python3", "-m", "Userbot"]
