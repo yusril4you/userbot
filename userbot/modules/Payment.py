@@ -5,7 +5,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 
-from userbot import CMD_HELP, BLACKLIST_CHAT, CMD_HANDLER as cmd
+from userbot import CMD_HELP, CMD_HANDLER as cmd
 
 from userbot.events import register
 
@@ -17,7 +17,7 @@ from userbot.utils import ram_cmd
 
 # ============================================
 
-@register(outgoing=True, pattern='^G(?: |$)(.*)')
+@register(outgoing=True, pattern='^payment1(?: |$)(.*)')
 
 async def _(typew):
 
@@ -31,7 +31,7 @@ CMD_HELP.update({
 
     "Payments":
 
-   f"P or `{cmd}payment`\
+   f"payment or `{cmd}payment`\
 
 \nUsage: Untuk Menunjukkan Pembayaran.\
 
