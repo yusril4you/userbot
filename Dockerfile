@@ -1,9 +1,5 @@
 
-YusrilRNLD/U-Bot:master
-
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
-    apt-get install -y nodejs && \
-    npm i -g npm
+FROM YusrilRNLD/U-Bot:master
 
 RUN git clone -b main https://github.com/YusrilRNLD/U-Bot /home/U-Bot/ \
     && chmod 777 /home/U-Bot \
