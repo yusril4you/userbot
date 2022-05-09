@@ -1,1 +1,1 @@
-FROM yusrilrnld/ubot:master
+FROM YusrilRNLD/U-Bot:master
