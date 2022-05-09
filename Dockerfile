@@ -1,7 +1,7 @@
 
 FROM YusrilRNLD/U-Bot:master
 # ======================
-#    RAM-UBOT DOCKER
+#    U-BOT DOCKER
 #   FROM DOCKERHUB.COM
 # ======================
 RUN git clone -b master https://github.com/YusrilRNLD/U-Bot home/yusgans/
