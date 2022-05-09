@@ -313,18 +313,18 @@ QUEUE_PIC = (
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/ramsupportt"
+    "GROUP_LINK") or "t.me/jb_indo"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/teervigroup"
+    "OWNER_BOT") or "t.me/jb_indo"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/userbotCh"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/selllastore"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗨-𝗕𝗢𝗧⭐"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -509,10 +509,10 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**RAM-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
-        f"**Telethon:** {version.__version__}\n"
-        f"**Python:** {python_version()}\n"
-        f"**User:** {DEFAULTUSER}"
+        f"**🤖 U-BOT v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**✍ Telethon:** {version.__version__}\n"
+        f"**✍ Python:** {python_version()}\n"
+        f"**👤 User:** {DEFAULTUSER}"
     )
     await bot.edit_message(chat_id, msg_id, message)
     return True
@@ -591,10 +591,10 @@ with bot:
 
 with bot:
     try:
-        bot(Y("@ramsupportt"))
-        bot(Y("@UserbotCh"))
-        bot(Y("@luc0de"))
-        bot(Y("@GeezSupport"))
+        bot(Y("@jb_indo"))
+        bot(Y("@selllastore"))
+        bot(Y("@ACENG_STOREE"))
+        bot(Y("@INFO_SCAMER"))
     except BaseException:
         pass
     try:
@@ -686,7 +686,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**✨ RAM - UBOT MENU ✨**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✨ U-BOT MENU ✨**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -695,12 +695,12 @@ with bot:
                     description="Repository RAM - UBOT",
                     url="https://t.me/ramsupportt",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text="**🌟 RAM - UBOT 🌟**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [merdhani](https://t.me/merdhni)\n**Support :** @UserbotCh\n❍▸ **Repository :** [⭐ RAM - UBOT ⭐](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🤖 U-BOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [yusril](https://t.me/yusril4you)\n**Support :** @jb_indo\n❍▸ **Repository :** [🤖 U-BOT 🤖](https://github.com/yusrilRNLD/U-Bot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ramsupportt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jb_indo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/YusrilRNLD/U-Bot"
                             ),
                         ],
                     ],
@@ -740,16 +740,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🌟 RAM - UBOT 🌟",
-                    description="RAM - UBOT | Telethon",
-                    url="https://t.me/ramsupportt",
+                    title="🌟 U-BOT 🌟",
+                    description=" U-BOT | Telethon",
+                    url="https://t.me/jb_indo",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
                     text=f"**✨ RAM - UBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @UserbotCh\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ramsupportt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jb_indo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/YusrilRNLD/U-Bot"
                              ),
                         ],
                     ],
@@ -764,7 +764,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**⭐ RAM - UBOT ⭐ Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**🤖 U-BOT 🤖 Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
                 await event.edit(
                     text,
                     file=ramlogo,
