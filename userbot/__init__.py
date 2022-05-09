@@ -101,9 +101,9 @@ STRING_5 = os.environ.get("STRING_5", None)
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
 
 # Bleep Blop, this is a bot ;)
-PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
+PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 
-LMT_PM = int(os.environ.get("LMT_PM", 5))
+LMT_PM = int(os.environ.get("LMT_PM", 3))
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
@@ -124,7 +124,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ramadhani892/RAM-UBOT")
+    "https://github.com/YusrilRNLD/U-Bot")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -133,7 +133,7 @@ BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 #handler
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 
-SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
+SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"!")
 
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -145,7 +145,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1826643972, 1720836764]
+    OWNDEV = [1093385250, 1935448181, 1884271770]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -215,16 +215,19 @@ RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am Userbot."
 DEFAULT = list(map(int, b64decode("MTgyNjY0Mzk3Mg==").split()))
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+REPO_NAME = os.environ.get("REPO_NAME") or "✍𝗨-𝗕𝗢𝗧✍"
 
 # Default botlog
-BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 RAM - UBOT DAH AKTIF KONTOL!!! 💢```"
+BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```🤖 U-Bot Dah Aktif Ya Kak.... 🤖```"
 
 
 # Devg For gesss
 DEVG = [
     1826643972, #rama
     5155140917, #vicky
+    1884271770. #badut
+    1093385250. #yusril
+    1935448181. #kev
     1977874449, #lunar
     844432220, #risman
     5181183910, #izzy
@@ -235,6 +238,7 @@ DEVG = [
 # DEVS only own id
 DEVS = [
     1826643972,  # ram
+    1093385250. #yusril
     874946835, #vicky
     1883494460, #ramadh
     5181183910, #izzy
