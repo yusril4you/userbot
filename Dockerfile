@@ -1,5 +1,5 @@
 
-FROM YusrilRNLD/U-Bot:master
+FROM YusrilRNLD/u-bot:master
 # ======================
 #    U-BOT DOCKER
 #   FROM DOCKERHUB.COM
