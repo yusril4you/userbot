@@ -49,13 +49,13 @@ async def gban(event):
     if not user:
         return
     if user.id == (await event.client.get_me()).id:
-        await ehajg(event, "**Kurang Kerjaan Amat Gban diri Sendiri Ngentot lo...**", 5)
+        await ehajg(event, "**Kurang Kerjaan Amat Gban diri Sendiri Goblok lo...**", 5)
         return
     if user.id in DEVS:
-        await ehajg(event, "**Maaf Mas, Lo Gabisa Gban dia Karna Dia Developer Gua**", 5)
+        await ehajg(event, "**Maaf Kak, Lo Gabisa Gban dia Karna Dia Developer Gua**", 5)
         return
     if user.id in DEVG:
-        await ehajg(event, "**Omaygat, Itu admin @Ramsupportt Tolol, Gabisa lah...**", 5)
+        await ehajg(event, "**Maaf Kak, Itu admin Gua, Lo Gabisa Gban Dia Tolol...**", 5)
         return
     if gban_sql.is_gbanned(user.id):
         await gbun.edit(
@@ -68,7 +68,7 @@ async def gban(event):
     count = 0
     fiz = len(san)
     if fiz == 0:
-        await gbun.edit("**Gabisa Gban, Karna Lo gada Gc Yg Lo adminin, Ciann....**")
+        await gbun.edit("**Gabisa Gban, Karna Lo gada Gc Yg Lo adminin....**")
         return
     await gbun.edit(
         f"**Global Banned Si** [TOLOL](tg://user?id={user.id}) **Dalam** `{len(san)}` **groups**"
