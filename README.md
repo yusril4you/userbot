@@ -1,7 +1,6 @@
 <a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
     <p align="center"> 
-<a href="https://t.me/jb_indo"><img src="https://see.fontimg.com/api/renderfont4/2O6xe/eyJyIjoiZnMiLCJoIjoxOTUsInciOjMwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/UkFNIFVCT1Q/organical-personal-use-bold-italic.png" alt="3D fonts"></a>
-<a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
+<a href="https://t.me/jb_indo"><img src="https://see.fontimg.com/api/<a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
     <p align="center"> 
 
 <img src="https://telegra.ph/file/14342cc8e29c372e38838.jpg">
