@@ -13,17 +13,17 @@ from userbot.utils import ram_cmd
 
 # ================= CONSTANT =================
 
-#                FROM RAM-UBOT
+#                FROM U-BOT
 
 # ============================================
 
-@register(outgoing=True, pattern='^payment1(?: |$)(.*)')
+@register(outgoing=True, pattern='^pay(?: |$)(.*)')
 
 async def _(typew):
 
     await typew.client.send_message(
 
-        typew.chat_id, "** VIA DANA = 0895611203477 VIA GOPAY = 081270603368 PAYMENT ACENG • STOREE **", reply_to=typew.reply_to_msg_id)
+        typew.chat_id, "** PAYMENT ACENG • STOREE VIA DANA = 0895611203477 VIA GOPAY = 081270603368 **", reply_to=typew.reply_to_msg_id)
  
     await typew.delete()
 
@@ -31,7 +31,7 @@ CMD_HELP.update({
 
     "Payments":
 
-   f"payment or `{cmd}payment`\
+   f"pay or `{cmd}payment`\
 
 \nUsage: Untuk Menunjukkan Pembayaran.\
 
