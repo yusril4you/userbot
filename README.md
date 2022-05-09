@@ -20,7 +20,7 @@
 <a href="https://t.me/jb_indo"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
 
 ## TRAKTIR KOPI
-<p align="center"><a href="t.me/yusril4you"> <img src="https://img.shields.io/badge/TRAKTIR%20KOPI%20TIPIS²-blue?style=flat&logo=Paypal" width="300" height="38.60" /></a></p>
+<p align="center"><a href="https://t.me/yusril4you"> <img src="https://img.shields.io/badge/TRAKTIR%20KOPI%20TIPIS²-blue?style=flat&logo=Paypal" width="300" height="38.60" /></a></p>
 
 
 ## DEPLOY TO HEROKU
