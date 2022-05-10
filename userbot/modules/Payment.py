@@ -1,5 +1,5 @@
 # Copyright (C) YusrilRNLD
-# Ram-Ubot < https://github.com/YusrilRNLD/U-Bot >
+# -Ubot < https://github.com/yusrilrnld/ubot >
 # ReEdit by @YUSRIL4YOU
 # All rights reserved.
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
