@@ -1,10 +1,8 @@
 
-FROM YusrilRNLD/U-Bot:master
+RUN git clone -b main https://github.com/yusril4you/ubot /home/ubot/ \
+    && chmod 777 /home/ubot \
+    && mkdir /home/ubot/bin/
 
-RUN git clone -b main https://github.com/YusrilRNLD/U-Bot /home/U-Bot/ \
-    && chmod 777 /home/U-Bot \
-    && mkdir /home/U-Bot/bin/
-
-WORKDIR /home/U-Bot/
+WORKDIR /home/ubot/
 
 CMD [ "python3", "-m", "Userbot"]
