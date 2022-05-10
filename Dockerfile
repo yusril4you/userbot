@@ -1,5 +1,5 @@
 
-FROM yusrilrnld/ubot:master
+FROM yusrilrnld/u-bot:master
 #yusrilrnld
 RUN git clone -b ubot https://github.com/yusrilrnld/ubot /home/ubot/ \
     && chmod 777 /home/ubot \
