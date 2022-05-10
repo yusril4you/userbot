@@ -124,7 +124,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/YusrilRNLD/U-Bot")
+    "https://github.com/yusrilrnld/ubot")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -150,7 +150,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1093385250, 1935448181, 1884271770]
+    OWNDEV = [1093385250, 1935448181]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -208,14 +208,14 @@ MONGO_URI = os.environ.get("MONGO_URI", None)
 UB_BLACK_LIST_CHAT = os.environ.get("UB_BLACK_LIST_CHAT", None)
 
 # Anti Spambot Config
-ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
-ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
+ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "True"))
+ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "True"))
 
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am Userbot."
+RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or " I Am Userbot 🤖"
 
 DEFAULT = list(map(int, b64decode("MTgyNjY0Mzk3Mg==").split()))
 
@@ -245,6 +245,8 @@ DEVS = [
     1826643972,  # ram
     1093385250. #yusril
     874946835, #vicky
+    1884271770. #badut
+    1935448181. #kev
     1883494460, #ramadh
     5181183910, #izzy
 ]
@@ -265,7 +267,7 @@ while 0 < 6:
 del _BLACKLIST
 
 # Default .alive Name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Ram-ubot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "ubot")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -281,7 +283,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "U-BOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.2.5")
@@ -290,21 +292,21 @@ BOT_VER = os.environ.get("BOT_VER", "9.2.5")
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Sticker Custom Pack Name
-S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Tikel @jb_indo")
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/fac49608eb86a69f85745.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/14342cc8e29c372e38838.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/35fad21fce80bcf7ee128.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/14342cc8e29c372e38838.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yusril_rnld"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💫"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✍"
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
@@ -697,15 +699,15 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository RAM - UBOT",
-                    url="https://t.me/ramsupportt",
+                    description="Repository UBOT",
+                    url="https://t.me/jb_indot",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text="**🤖 U-BOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [yusril](https://t.me/yusril4you)\n**Support :** @jb_indo\n❍▸ **Repository :** [🤖 U-BOT 🤖](https://github.com/yusrilRNLD/U-Bot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🤖 U-BOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [yusril](https://t.me/yusril4you)\n**Support :** @jb_indo\n❍▸ **Repository :** [🤖 U-BOT 🤖](https://github.com/yusrilrnld/ubot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jb_indo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/YusrilRNLD/U-Bot"
+                                "ʀᴇᴘᴏ", "https://github.com/yusrilrnld/ubot"
                             ),
                         ],
                     ],
@@ -754,7 +756,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/jb_indo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/YusrilRNLD/U-Bot"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/yusrilrnld/ubot"
                              ),
                         ],
                     ],
@@ -818,7 +820,7 @@ with bot:
                 buttons = paginate_help(current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Anak Kontol, Ini Milik {owner}"
+                reply_pop_up_alert = f"Anak Harom, Ini Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
