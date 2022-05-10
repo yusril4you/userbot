@@ -1,7 +1,11 @@
 
-RUN git clone -b main https://github.com/yusril4you/ubot /home/ubot/ \
+FROM yusrilrnld/ubot:master
+#yusrilrnld
+RUN git clone -b ubot https://github.com/yusrilrnld/ubot /home/ubot/ \
     && chmod 777 /home/ubot \
-    && mkdir /home/ubot/bin/
+    && mkdir /home/ayiinubot/bin/
+
+COPY ./sample_config.env ./config.env* /home/ubot/
 
 WORKDIR /home/ubot/
 
